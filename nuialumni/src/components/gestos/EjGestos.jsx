@@ -52,6 +52,7 @@ export default function EjGestos() {
       const predictions = await model.detect(video);
       //console.log(predictions);
       predictions.map((prediction) => setLabel(prediction.label));
+      const divPrincipal = document.querySelector(".Background");
 
       if (label === "open") {
         console.log("scrolling down");
@@ -62,7 +63,10 @@ export default function EjGestos() {
       
         window.scrollBy(0, -window.innerHeight);
       } 
-      else 
+      else if(label === "point"){
+        console.log("cambiando color");
+        divPrincipal.style.backgroundColor = "green";
+      } else
       {
         console.log("detecting...");
       
@@ -72,7 +76,7 @@ export default function EjGestos() {
   runHandtrack();
   return (
     <>
-        <div style = {{
+        <div className="Background" style = {{
           alignItems: 'center',
           display: 'flex',
           backgroundColor: 'pink',

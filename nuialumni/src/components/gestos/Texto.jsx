@@ -4,6 +4,7 @@ export default function Texto() {
   return (
     <div>
     <h2>👋 Abre la mano para hacer scroll hacia abajo</h2>
+    <h3> Pon un dedo para cambiar el fondo de rosa a verde</h3>
     <p>
       1. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
       odio voluptatem adipisci repellendus amet nulla quae alias eius nostrum
