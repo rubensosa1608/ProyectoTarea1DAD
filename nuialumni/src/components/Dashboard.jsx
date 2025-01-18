@@ -28,7 +28,10 @@ function Dashboard() {
                         <Grid size={{xs:12, md:1, lg:1}}>        
                             <Link to={'/ar'} style={{textDecoration:'none', color:'white'}}>AR</Link>
                         </Grid>
-
+                        
+                        <Grid size={{xs:12, md:1, lg:1}}>        
+                            <Link to={'/arruben'} style={{textDecoration:'none', color:'white'}}>AR Ruben</Link>
+                        </Grid>
                         
                     </Grid>
                 </Toolbar >

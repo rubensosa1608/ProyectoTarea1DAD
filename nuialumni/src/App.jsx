@@ -6,6 +6,7 @@ import VozEj2 from './components/VozEj2'
 import Gestos from './components/Gestos'
 import AR from './components/AR'
 import Home from './components/Home'
+import ARRuben from './components/ARRuben'
 
 
 //import Pruebas from './components/Pruebas'
@@ -41,8 +42,12 @@ const router = createBrowserRouter([
         path: '/ar',
         element: <AR />
       }
+      ,
+      {
+        path: '/arruben',
+        element: <ARRuben />
+      }
 
-      
     ]
   }
 ])
